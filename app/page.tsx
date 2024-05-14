@@ -185,7 +185,7 @@ export default function WebcamPage() {
           {enabled ? "Stop" : "Start"}
         </button>
       </div>
-      <div> frame rate: {(numberOfFrames / numberOfSeconds).toFixed()}</div>
+      <div> frame rate: {(numberOfFrames / numberOfSeconds || 0).toFixed()}</div>
       <div> timer: {numberOfSeconds.toFixed()}</div>
       <div> number of frames: {numberOfFrames}</div>
       <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4 justify-between">
